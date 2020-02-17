@@ -1,0 +1,32 @@
+extends layout.pug
+block content
+	.container
+		h1#index-heading-1 Is your business as safe as you think?
+		div#index-center-div
+			div#captionBoxDiv
+				a(href='/something')
+					img(class='img-left', src="make-a-note.jpg")
+				div#imageCaption4
+					h4 Cyber Awareness
+					p Are your employees aware of their security obligations?
+			div#captionBoxDiv
+				a(href='/awareness')
+					img(class='img-right', src="cyber-security.jpg")
+				div#imageCaption3
+					h4 Cyber Awareness
+					p Are your employees aware of their security obligations?
+			div#captionBoxDiv
+				a(href='/ransomware')
+					img(class='img-btm-left',src="/ransomware-image.jpg")
+				div#imageCaption
+					h4 Ransomware
+					p An international issue
+			div#captionBoxDiv
+				a(href='/security-policy')
+					img(class='img-btm-right',src="/security-policy-500px.jpg")
+				div#imageCaption2
+					h4 Cyber security policy
+					p Why your business needs policy
+		button.btn.btn-primary#btnGetData(type='button') Start Test
+			
+			
