@@ -1,0 +1,28 @@
+extends layout.pug
+block content
+	.container
+		h1.categoryHeading Category 1: Security Policy
+		div#indexCenterDiv
+			div#quizDiv
+				div#captionBoxDiv
+					img(class='quizImgQ1', src="read-policy.jpg")
+					h3.textLeft.questionHeading Q5:
+						h4.questionHeading When did you last read your security policy?
+						form(role='form',id='myForm',action="/security-test",method="post")
+							div.radioDiv#normalRadioGroup(style="margin-left:50px;")
+								input(type='radio', id='in-three-months', name='selection', value='In the last 3 months')
+								label.lblSpacing(for='in-three-months') In the last 3 months
+								input(type='radio', id='in-six-months', name='selection', value='In the last 6 months')
+								label.lblSpacing(for='in-six-months') In the last 6 months
+								input(type='radio', id='a-year-ago', name='selection', value='A year ago')
+								label.lblSpacing(for='a-year-ago') A year ago							
+								input(type='radio', id='more-than-a-year', name='selection', value='More than a year ago')
+								label.lblSpacing(for='more-than-a-year') More than a year ago
+								input(type='radio', id='dont-know', name='selection', value='Dont know')
+								label.lblSpacing(for='dont-know') Dont know
+							div.formButtons
+								button.btn.btn-success#btnSubmit1(type='submit') Submit
+								button.btn.btn-success#btnNext5(type='button',href="http://localhost:9000/results") Next
+								style(type="text/css").
+									body {background-color:grey;}
+								

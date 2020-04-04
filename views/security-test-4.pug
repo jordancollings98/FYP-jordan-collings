@@ -1,0 +1,33 @@
+extends layout.pug
+block content
+	.container
+		h1.categoryHeading Category 1: Security Policy
+		div#indexCenterDiv
+			div#quizDiv(style="height: 770px !important;")
+				div#captionBoxDiv
+					img(class='quizImgQ1', src="policy-guide.jpg")
+					h3.textLeft.questionHeading Q4:
+						h4.questionHeading How many of the following guidelines does your policy cover?
+						form(role='form',id='myForm',action="/security-test",method="post")
+							ul
+								li.multiQuestionList Email usage guidlines
+								li.multiQuestionList Unknown devices
+								li.multiQuestionList Use of company-owned devices
+								li.multiQuestionList Use of personal devices
+							div.radioDiv#normalRadioGroup
+								input(type='radio', id='all-four', name='selection', value='All four')
+								label.lblSpacing(for='all-four') All four
+								input(type='radio', id='only-three', name='selection', value='Only three')
+								label.lblSpacing(for='only-three') Only three
+								input(type='radio', id='only-two', name='selection', value='Only two')
+								label.lblSpacing(for='only-two') Only two
+								input(type='radio', id='only-one', name='selection', value='Only one')
+								label.lblSpacing(for='only-one') Only one
+								input(type='radio', id='none', name='selection', value='None')
+								label.lblSpacing(for='none') None
+							div.formButtons
+								button.btn.btn-success#btnSubmit1(type='submit') Submit
+								button.btn.btn-success#btnNext4(type='button',href="http://localhost:9000/security-test5") Next
+								style(type="text/css").
+									body {background-color:grey;}
+								

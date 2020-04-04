@@ -1,0 +1,30 @@
+extends layout.pug
+block content
+	.container
+		h1.categoryHeading Category 2: Passwords
+		div#indexCenterDiv
+			div#quizDiv(style="height: 770px !important;")
+				div#captionBoxDiv
+					img(class='quizImgQ1', src="make-a-note.jpg")
+					h3.textLeft.questionHeading Q8:
+						h4.questionHeading What is the correct advice for secure passwords?
+						form(role='form',id='myForm',action="/security-test",method="post")
+							ul
+								li.multiQuestionList (A) Always use a password that is easy to remember - something familiar, like the name of your pet.
+								li.multiQuestionList (B) Use one password for personal accounts, and another for work accounts.
+								li.multiQuestionList (C) Make a long and strong password with symbols and numbers
+								li.multiQuestionList (D) Never use more than one password
+							div.radioDiv(style="display:inline-block;margin-top:10px;margin-bottom:10px;")
+								input(type='radio', id='eight-with-symbols', name='selection', value='Easy to remember')
+								label.lblSpacing(for='eight-with-symbols') (A)
+								input(type='radio', id='eight-with-upper', name='selection', value='One for work')
+								label.lblSpacing(for='eight-with-upper') (B)
+								input(type='radio', id='eight-with-numbers', name='selection', value='Long and strong')
+								label.lblSpacing(for='eight-with-numbers') (C)
+								input(type='radio', id='eight', name='selection', value='Never more than one')
+								label.lblSpacing(for='eight') (D)
+							div.formButtons
+								button.btn.btn-success#btnSubmit1(type='submit') Submit
+								button.btn.btn-success#btnNext9(type='button') Next
+							style(type="text/css").
+								body {background-color:grey;}

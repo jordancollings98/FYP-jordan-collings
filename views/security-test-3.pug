@@ -1,0 +1,28 @@
+extends layout.pug
+block content
+	.container
+		h1.categoryHeading Category 1: Security Policy
+		div#indexCenterDiv
+			div#quizDiv
+				div#captionBoxDiv
+					img(class='quizImgQ1', src="know-your-policy.jpg")
+					h3.textLeft.questionHeading Q3:
+						h4.questionHeading How well do you know the security policy?
+						form(role='form',id='myForm',action="/security-test",method="post")
+							div.radioDiv#normalRadioGroup(style="margin-left:100px;")
+								input(type='radio', id='very-well', name='selection', value='Very well')
+								label.lblSpacing(for='very-well') Very well
+								input(type='radio', id='well', name='selection', value='Well')
+								label.lblSpacing(for='well') Well
+								input(type='radio', id='somewhat-well', name='selection', value='Somewhat well')
+								label.lblSpacing(for='somewhat-well') Somewhat well
+								input(type='radio', id='not-very-well', name='selection', value='Not very well')
+								label.lblSpacing(for='not-very-well') Not very well
+								input(type='radio', id='not-well', name='selection', value='Not well')
+								label.lblSpacing(for='not-well') Not well
+							div.formButtons
+								button.btn.btn-success#btnSubmit1(type='submit') Submit
+								button.btn.btn-success#btnNext3(type='button',href="http://localhost:9000/security-test4") Next
+							style(type="text/css").
+									body {background-color:grey;}
+								

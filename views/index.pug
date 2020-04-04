@@ -1,8 +1,13 @@
 extends layout.pug
 block content
 	.container
-		h1#index-heading-1 Is your business as safe as you think?
-		div#index-center-div
+		div#indexInfo
+			h1#indexHeadingGrey Why your business needs to LockDown
+			p.centerAlign#paraMeasures Even in our current digital age many businesses do not have the correct cyber security measures to protect their interests. <br>In October 2019 alone there were #[strong 421 million records breached globally] [According to #[a.anchorItGov(href="https://www.itgovernance.co.uk/blog/list-of-data-breaches-and-cyber-attacks-in-october-2019") IT Governance.co.uk]]<br> 
+			img(class="imgWhiteGlobe", src="white-globe.jpg")
+			p.centerAlignMargin#paraPerspective (To put that into perspective that's almost #[strong 7x ] the population of the UK!)
+		div#indexCenterDiv
+			h2#indexHeadingGrey Is your business as safe as you think?
 			div#captionBoxDiv
 				a(href='/something')
 					img(class='img-left', src="make-a-note.jpg")
@@ -27,6 +32,19 @@ block content
 				div#imageCaption2
 					h4 Cyber security policy
 					p Why your business needs policy
-		button.btn.btn-primary#btnGetData(type='button') Start Test
+		button.btn.btn-primary#btnStart(type='button',href="http://localhost:9000/security-test") Start Test
+		footer#indexFooter
+			div.col-4#footerColumnLeft
+				h3.footerHeading LOCKDOWN
+				p The objective of the LockDown project is to make a simple and easy quiz for any business to get feedback on their current cyber security initiatives.<br> This was particularly made to encourage businesses to consider their needs for cyber security.<br>
+				p.lockdownStrong #[strong Make sure your cyber security is on #[i.lockdownItalic LockDown.]]
+			div.col-4#footerColumnMiddle
+				h3.footerHeading CONTACT INFO
+				p.smallerFont  Telephone: #[strong 07713 434 846]
+				p.smallerFont  E-mail: #[strong jordan.collings@hotmail.com]
+				p.smallerFont If you wish to contact us with any queries on how the test works or any advice on how to action any feedback within your business, please use the contact information above.<br><br><br><br>
+			p.copyFooter &copy; 2020 | LockDown | Jordan Collings			
+		style(type="text/css").
+			body {background-image: url("./photo-of-earth5.jpg");}
 			
 			

@@ -1,0 +1,34 @@
+extends layout.pug
+block content
+	.container
+		h1.categoryHeading Category 2: Passwords
+		div#indexCenterDiv
+			div#quizDiv(style="height: 770px !important;")
+				div#captionBoxDiv
+					img(class='quizImgQ1', src="make-a-note.jpg")
+					h3.textLeft.questionHeading Q7:
+						h4.questionHeading How many of the following guidelines does your policy cover?
+						form(role='form',id='myForm',action="/security-test",method="post")
+							ul
+								li.multiQuestionList (A) Yes, more than 8 characters with symbols, upper/lowercase characters and numbers.
+								li.multiQuestionList (B) Yes, more than 8 characters with upper/lowercase characters and numbers.
+								li.multiQuestionList (C) Yes, more than 8 characters with numbers.
+								li.multiQuestionList (D) Yes, more than 8 characters.
+								li.multiQuestionList (E) None of the above/No strong password policy.
+							div.radioDiv(style="display:inline-block;margin-top:10px;margin-bottom:10px;")
+								input(type='radio', id='eight-with-symbols', name='selection', value='Eight with symbols')
+								label.lblSpacing(for='eight-with-symbols') (A)
+								input(type='radio', id='eight-with-upper', name='selection', value='Eight with uppercase')
+								label.lblSpacing(for='eight-with-upper') (B)
+								input(type='radio', id='eight-with-numbers', name='selection', value='Eight with numbers')
+								label.lblSpacing(for='eight-with-numbers') (C)
+								input(type='radio', id='eight', name='selection', value='Eight')
+								label.lblSpacing(for='eight') (D)
+								input(type='radio', id='none', name='selection', value='None')
+								label.lblSpacing(for='none') (E)
+							div.formButtons
+								button.btn.btn-success#btnSubmit1(type='submit') Submit
+								button.btn.btn-success#btnNext8(type='button') Next
+							style(type="text/css").
+								body {background-color:grey;}
+								

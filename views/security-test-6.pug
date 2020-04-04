@@ -1,0 +1,27 @@
+extends layout.pug
+block content
+	.container
+		h1.categoryHeading Category 2: Passwords
+		div#indexCenterDiv
+			div#quizDiv
+				div#captionBoxDiv
+					img(class='quizImgQ1', src="make-a-note.jpg")
+					h3.textLeft.questionHeading Q6:
+						h4.questionHeading How many passwords do you use?
+						form(role='form',id='myForm',action="/security-test",method="post")
+							div.radioDiv(style="margin-left:30px;display:inline-block;margin-top:35px;")
+								input(type='radio', id='more-than-five', name='selection', value='More than Five')
+								label.lblSpacing(for='more-than-five') 5+
+								input(type='radio', id='four-passwords', name='selection', value='Four')
+								label.lblSpacing(for='four-passwords') 4
+								input(type='radio', id='three-passwords', name='selection', value='Three')
+								label.lblSpacing(for='three-passwords') 3							
+								input(type='radio', id='two-passwords', name='selection', value='Two')
+								label.lblSpacing(for='two-passwords') 2
+								input(type='radio', id='one-password', name='selection', value='One')
+								label.lblSpacing(for='one-password') 1
+							div.formButtons
+								button.btn.btn-success#btnSubmit1(type='submit') Submit
+								button.btn.btn-success#btnNext7(type='button') Next
+								style(type="text/css").
+									body {background-color:grey;}
