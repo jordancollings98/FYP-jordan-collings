@@ -1,0 +1,39 @@
+html{margin:0px; height:100%;}
+body {margin:0px;font-family: Arial, Helvetica, sans-serif;}
+
+/* ///////////// Top bar divs \\\\\\\\\\\\\ */
+#top-bar{margin-top:0px;width:100%; background-color:grey;height:75px;}
+#top-bar-right{float:right;margin-right:8px;}
+#top-bar-left{float:left;}
+
+.img-left{height:1000px;}
+
+#btm-left{float:left;background-color:AntiqueWhite;text-align: center;width:33.33%;height:60%;display:inline-block;overflow:hidden;}
+#btm-center{margin:auto;background-color:brown;width:66.66%;height:60%;display:inline-block;}
+.headingNoteTitle{padding-top:25px;padding-bottom:25px;background-color:grey;margin-top:0px;margin-bottom:10%;}
+
+
+/* ///////////// END Top bar divs \\\\\\\\\\\\\ */
+
+/* ///////////// Calendar \\\\\\\\\\\\\ */
+#googleCalendar{width:100%;height:600px;display:inline-block;}
+
+/* ///////////// END Calendar \\\\\\\\\\\\\ */
+
+/* ///////////// Buttons \\\\\\\\\\\\\ */
+button { background-color: #4CAF50;color: white;padding: 14px 20px;margin: 8px 0;border: none;cursor: pointer;width: 100%;}
+
+button:hover {opacity: 0.8;}
+
+/* ///////////// END Buttons \\\\\\\\\\\\\ */
+
+
+/* ///////////// Images \\\\\\\\\\\\\ */
+
+.containerImg {text-align: center; margin: 24px 0 12px 0;position: relative;}/* Center image and position close button */
+
+img.userImage {width: 40%;margin-bottom:20px;}
+img.imgNote{width:20%;border-radius:30%;margin-bottom:40px;}
+img.noteExample{width:20%;border-radius:30%;margin-left:10%;margin-bottom:50px;}
+
+/* ///////////// END Images \\\\\\\\\\\\\ */
