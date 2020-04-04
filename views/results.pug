@@ -1,0 +1,18 @@
+extends layout.pug
+block content
+	.container
+		section.sectGet
+			h3#indexHeadingGrey(style="background-color: grey; padding:1rem;") Category 1: Security Policy | Feedback
+			a(href='#')
+				button.btn.btn-primary#btnGetAnswer(type='button') Get Feedback
+		div#displayData 
+				div#q1Feedback.feedbackTile
+				div#q2Feedback.feedbackTile
+				div#q3Feedback.feedbackTile
+				div#q4Feedback.feedbackTile
+				div#q5Feedback.feedbackTile
+				button.btn.btn-success#btnNext6(type='button',href="http://localhost:9000/security-test6") Next
+				style(type="text/css").
+					body {background-image: url("./photo-of-earth5.jpg"); }
+			
+				
