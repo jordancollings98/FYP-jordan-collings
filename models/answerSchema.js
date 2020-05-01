@@ -5,7 +5,7 @@ var connection = mongoose.createConnection("mongodb+srv://jcollings2:plymouthuni
 var autoIncrement = autoIncrementFactory(connection);
 
 var answerSchema = new Schema({
-	selection: String,	
+	selection: String,
 	}, {
     timestamps: true
 });
