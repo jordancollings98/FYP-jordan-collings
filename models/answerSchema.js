@@ -1,7 +1,7 @@
 var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 var autoIncrementFactory = require('mongoose-sequence');
-var connection = mongoose.createConnection("mongodb+srv://jcollings2:plymouthuniversity@uni-exercise5-ezjhs.mongodb.net/securityDb?retryWrites=true&w=majority",{useNewUrlParser: true, useUnifiedTopology: true,  useFindAndModify: false });
+var connection = mongoose.createConnection("CONNECTION STRING REDACTED FOR SECURITY",{useNewUrlParser: true, useUnifiedTopology: true,  useFindAndModify: false });
 var autoIncrement = autoIncrementFactory(connection);
 
 var answerSchema = new Schema({
