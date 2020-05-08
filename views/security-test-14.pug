@@ -1,0 +1,39 @@
+extends layout.pug
+block content
+	.container
+		h1.categoryHeading Category 3: Security Awareness
+		div#indexCenterDiv
+			div#quizDiv(style="height: 835px !important;")
+				div#captionBoxDiv
+					img(class='quizImgQ1', src="awareness-promotion-600px.jpg", alt="Image of communication methods in cyber security awareness.")
+					h3.textLeft.questionHeading 14:
+						h4.questionHeading Which of the following methods has security awareness been promoted to you?
+						form(role='form',id='myForm',action="/security-test",method="post")
+							ul.listQuestion
+								li.multiQuestionList (A) E-mail
+								li.multiQuestionList (B) Occasional meetings
+								li.multiQuestionList (C) Monthly meetings
+								li.multiQuestionList (D) Leaflets/Flyers
+								li.multiQuestionList (E) Posters
+								li.multiQuestionList (F) Other
+								li.multiQuestionList (G) Awareness has not been promoted
+							div.radioDiv(style="display:inline-block;margin-top:10px;margin-bottom:10px;")
+								input(type='radio', id='email', name='selection', value='Email')
+								label.lblSpacing(for='email') (A)
+								input(type='radio', id='occasional-meetings', name='selection', value='Occasional meetings')
+								label.lblSpacing(for='occasional-meetings') (B)
+								input(type='radio', id='monthly-meetings', name='selection', value='Monthly meetings')
+								label.lblSpacing(for='monthly-meetings') (C)
+								input(type='radio', id='leaflets-flyers', name='selection', value='Leaflets and flyers')
+								label.lblSpacing(for='leaflets-flyers') (D)
+								input(type='radio', id='posters', name='selection', value='Posters')
+								label.lblSpacing(for='posters') (E)
+								input(type='radio', id='other', name='selection', value='Other')
+								label.lblSpacing(for='other') (F)
+								input(type='radio', id='not-promoted', name='selection', value='Awareness has not been promoted')
+								label.lblSpacing(for='not-promoted') (G)
+							div.formButtons
+								button.btn.btn-success#btnSubmit1(type='submit') Submit
+								button.btn.btn-success#btnNext16(type='button') Next
+							style(type="text/css").
+								body {background-color:#87CEFA;}

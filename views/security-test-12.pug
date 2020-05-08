@@ -1,0 +1,27 @@
+extends layout.pug
+block content
+	.container
+		h1.categoryHeading Category 3: Security Awareness
+		div#indexCenterDiv
+			div#quizDiv
+				div#captionBoxDiv
+					img(class='quizImgQ1', src="awareness-time.jpg", alt="Picture of clock")
+					h3.textLeft.questionHeading Q12:
+						h4.questionHeading How often is awareness training conducted in your business?
+						form(role='form',id='myForm',action="/security-test",method="post")
+							div.radioDiv(style="margin-left:30px;display:inline-block;margin-top:35px;")
+								input(type='radio', id='anually', name='selection', value='Anually')
+								label.lblSpacing(for='anually') Anually
+								input(type='radio', id='monthly', name='selection', value='Monthly')
+								label.lblSpacing(for='monthly') Monthly
+								input(type='radio', id='weekly', name='selection', value='Weekly')
+								label.lblSpacing(for='weekly') Weekly							
+								input(type='radio', id='every-two-months', name='selection', value='Once two to three')
+								label.lblSpacing(for='every-two-months') Once every 2-3 months
+								input(type='radio', id='never', name='selection', value='Never')
+								label.lblSpacing(for='never') Infrequently/Never
+							div.formButtons
+								button.btn.btn-success#btnSubmit1(type='submit') Submit
+								button.btn.btn-success#btnNext14(type='button') Next
+								style(type="text/css").
+									body {background-color:#87CEFA;}

@@ -1,0 +1,28 @@
+extends layout.pug
+block content
+	.container
+		h1.categoryHeading Category 3: Security Awareness
+		div#indexCenterDiv
+			div#quizDiv
+				div#captionBoxDiv
+					img(class='quizImgQ1', src="aware-balloon.jpg")
+					h3.textLeft.questionHeading Q11:
+						h4.questionHeading To what degree do you believe security awareness has been helpful for your security?
+						form(role='form',id='myForm',action="/security-test",method="post")
+							div.radioDiv#normalRadioGroup(style="margin-left:50px;text-align:center !important;margin-bottom:20px;")
+								input(type='radio', id='extremely-helpful', name='selection', value='Extremely helpful')
+								label.lblSpacing(for='extremely-helpful') Extremely helpful
+								input(type='radio', id='very-helpful', name='selection', value='Very helpful')
+								label.lblSpacing(for='very-helpful') Very helpful
+								input(type='radio', id='helpful', name='selection', value='Helpful')
+								label.lblSpacing(for='helpful') Helpful							
+								input(type='radio', id='unhelpful', name='selection', value='Unhelpful')
+								label.lblSpacing(for='unhelpful') Unhelpful
+								input(type='radio', id='very-unhelpful', name='selection', value='Very unhelpful')
+								label.lblSpacing(for='very-unhelpful') Very unhelpful
+							div.formButtons
+								button.btn.btn-success#btnSubmit1(type='submit') Submit
+								button.btn.btn-success#btnNext13(type='button',href="http://localhost:9000/results") Next
+								style(type="text/css").
+									body {background-color:#87CEFA;}
+								

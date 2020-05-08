@@ -1,0 +1,27 @@
+extends layout.pug
+block content
+	.container
+		h1.categoryHeading Category 3: Security Awareness
+		div#indexCenterDiv
+			div#quizDiv
+				div#captionBoxDiv
+					img(class='quizImgQ1', src="cyber-measures-600px.jpg",alt="Image of laptop and notebook showing site screenshot.")
+					h3.textLeft.questionHeading 15:
+						h4.questionHeading How aware would you describe yourself of cyber security measures and best practice?
+						form(role='form',id='myForm',action="/security-test",method="post")
+							div.radioDiv#normalRadioGroup(style="margin-left:50px;text-align:center !important;")
+								input(type='radio', id='very-aware', name='selection', value='Very aware')
+								label.lblSpacing(for='very-aware') Very aware
+								input(type='radio', id='aware', name='selection', value='Aware')
+								label.lblSpacing(for='aware') Aware
+								input(type='radio', id='somewhat-aware', name='selection', value='Somewhat aware')
+								label.lblSpacing(for='somewhat-aware') Somewhat aware							
+								input(type='radio', id='not-very-aware', name='selection', value='Not very aware')
+								label.lblSpacing(for='not-very-aware') Not very aware
+								input(type='radio', id='unaware', name='selection', value='Unaware')
+								label.lblSpacing(for='unaware') Unaware
+							div.formButtons
+								button.btn.btn-success#btnSubmit1(type='submit') Submit
+								button.btn.btn-success#btnNext17(type='button') Next
+								style(type="text/css").
+									body {background-color:#87CEFA;}
