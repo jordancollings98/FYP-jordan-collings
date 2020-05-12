@@ -21,6 +21,9 @@ $(document).ready(function(){
       });
     });
   });
+  $("#btnHome").click(function(){
+	  window.location.href = "http://localhost:9000/";
+  });
   $("#btnStart").click(function(){
 	  window.location.href = "http://localhost:9000/security-test";
   });
@@ -55,6 +58,27 @@ $(document).ready(function(){
 	  window.location.href = "http://localhost:9000/security-test-10";
   });
   $("#btnNext11").click(function(){
-	  window.location.href = "http://localhost:9000/results2";
+	  window.location.href = "http://localhost:9000/results-2";
+  });
+  $("#btnNext12").click(function(){
+	  window.location.href = "http://localhost:9000/security-test-11";
+  });
+  $("#btnNext13").click(function(){
+	  window.location.href = "http://localhost:9000/security-test-12";
+  });
+  $("#btnNext14").click(function(){
+	  window.location.href = "http://localhost:9000/security-test-13";
+  });
+  $("#btnNext15").click(function(){
+	  window.location.href = "http://localhost:9000/security-test-14";
+  });
+  $("#btnNext16").click(function(){
+	  window.location.href = "http://localhost:9000/security-test-15";
+  });
+  $("#btnNext17").click(function(){
+	  window.location.href = "http://localhost:9000/results-3";
+  });
+  $("#btnNext18").click(function(){
+	  window.location.href = "http://localhost:9000/final-results";
   });
 });
