@@ -3,13 +3,13 @@ block content
 	.container
 		h1.categoryHeading Category 2: Passwords
 		div#indexCenterDiv
-			div#quizDiv(style="height: 770px !important;")
+			div#quizDiv(style="height: 780px !important;")
 				div#captionBoxDiv
-					img(class='quizImgQ1', src="make-a-note.jpg")
+					img(class='quizImgQ1', src="strong-secure-600px.jpg")
 					h3.textLeft.questionHeading Q7:
-						h4.questionHeading How many of the following guidelines does your policy cover?
+						h4.questionHeading Does your company have a strong password policy?
 						form(role='form',id='myForm',action="/security-test",method="post")
-							ul
+							ul.listQuestion
 								li.multiQuestionList (A) Yes, more than 8 characters with symbols, upper/lowercase characters and numbers.
 								li.multiQuestionList (B) Yes, more than 8 characters with upper/lowercase characters and numbers.
 								li.multiQuestionList (C) Yes, more than 8 characters with numbers.
@@ -29,6 +29,7 @@ block content
 							div.formButtons
 								button.btn.btn-success#btnSubmit1(type='submit') Submit
 								button.btn.btn-success#btnNext8(type='button') Next
+								button.btn.btn-success.homeButton#btnHome(type='button') Home
 							style(type="text/css").
-								body {background-color:grey;}
+								body {background-color:#87CEFA;}
 								

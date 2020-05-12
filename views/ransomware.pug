@@ -1,11 +1,22 @@
 extends layout.pug
 block content
 	.container
-		h1#index-heading-1 Is your business as safe as you think?
-		
 		div#index-center-div
-			img(class='img-left')
-			img(class='img-right')
-			img(class='img-btm-left',src="/make-a-note.jpg")
-			img(class='img-btm-right',src="/forest-background2.jpg")
-		button.btn.btn-primary#btnGetData(type='button', value='Hi', text='hi') Hello
+			div#mainDiv
+				div#titleBlogDiv
+					h1#blogTitle The issues of ransomware in <br> today's world (2020)
+					div#authorDiv
+						img(class='authorIcon', src="favicon.ico")
+						p.authorText Jordan Collings <br><i style="color:rgba(0,0,0, 0.54);">April 20, 2020 . 2 min read</i>
+						<hr>
+				div#mainContentDiv
+					img(class='newImg', src="ransomware-image.jpg", style="width:100%;height:700px;")
+					p.mainBlogText In 2020, ransomware has become an enormous issue, just in the UK in 2019 <sup>[1]</sup>&nbsp;27% of cyber security breaches were ransomware attacks have had some kind of ransomware attack in the UK. The scale of ransomware has grown exponentially in the last few years due to the ease at which hackers can create ransomware programs and the vast scale they can be spread due to internet methods such as E-mail.<br><br> However, in the business world ransomware is still not being taken as seriously as it should be, cyber security professionals have deemd that cyber security awareness is still not at an acceptable level to deal with these issues. </br></br>Although, despite this, numbers of ransomware attacks are declining from the previous years, where a considerably larger portion of businesses were becoming susceptible to ransomware attacks.<br><br>To conclude, ransomware attacks in 2020 are still seeing a large amount of prevalence in the business market, however, these numbers are thankfully declining more and more every year thanks to individuals and businesses as a whole becoming more cyber aware and protecting themselves and their businesses.</br></br>
+					p#finalText <a class="blackLink" href='/security-test'><i>To make sure your business is ready to tackle ransomware, take the LockDown quiz and find out how secure you really are.</i></a>
+					<hr>
+					div#referenceDiv
+						h3.refTitle References
+						p.reference <i><sup>[1] </sup>Department for Digital, Culture, Media & Sport, 2019. Cyber Security Breaches Survey 2019.</i>
+						button.btn.btn-success.btnResult#btnHome(type='button') Home
+		style(type="text/css").
+							   body {background-color:lightskyblue;}

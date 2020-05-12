@@ -1,0 +1,22 @@
+extends layout.pug
+block content
+	.container
+		div#index-center-div
+			div#mainDiv
+				div#titleBlogDiv
+					h1#blogTitle Why you or your business<br> should be cyber aware (2020)
+					div#authorDiv
+						img(class='authorIcon', src="favicon.ico")
+						p.authorText Jordan Collings <br><i style="color:rgba(0,0,0, 0.54);">May 6, 2020 . 2 min read</i>
+						<hr>
+				div#mainContentDiv
+					img(class='newImg', src="cyber-security.jpg", style="width:100%;height:700px;")
+					p.mainBlogText In 2020, cyber security awareness is now reaching the best it has ever been, many businesses are now are that cyber security is a real threat to their business and that staff need to be aware of what cyber security is, according to the Cyber Security Breaches Survey (2020)<sup>[1]</sup> Up to 80% of businesses say that senior management find cyber security a high priority when questioning cyber security professionals.<br><br>However, there is still the need for cyber security awareness as the same report also sites that 70% of businesses have still suffered the effects of cyber security attacks or breaches in the last year. <br><br>This most likely means that if senior management are seen to be 'taking cyber security seriously' it has not been communicated to other business staff in a comprehensive enough way.<br><br>For cyber security awareness to be effective multiple methods must be attempted, through the usage of materials such as: posters, flyers, emails and other awareness advertising materials.<br><br> Another awareness method to consider is having meetings about security awareness approximately every two to three months, this allows for staff to not feel overwhelmed with awareness and to get refreshed on the content often enough.<br><br>In conclusion, cyber security awareness has seen a dramatic rise in relevance to most business staff, however, judging by the rate of cyber security breaches still occuring, a different picture may be painted, by which, staff are seen as aware but they are not practicing awareness in day to day tasks.<br><br>
+					p#finalText <a class="blackLink" href='/security-test'><i>To make sure your business is cyber aware, take the LockDown quiz and find out how aware you really are.</i></a>
+					<hr>
+					div#referenceDiv
+						h3.refTitle References
+						p.reference <i><sup>[1] </sup>Department for Digital, Culture, Media & Sport, 2020. Cyber Security Breaches Survey 2020.</i>
+						button.btn.btn-success.btnResult#btnHome(type='button') Home
+		style(type="text/css").
+							   body {background-color:lightskyblue;}

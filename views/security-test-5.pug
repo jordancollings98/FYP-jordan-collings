@@ -6,7 +6,7 @@ block content
 			div#quizDiv
 				div#captionBoxDiv
 					img(class='quizImgQ1', src="read-policy.jpg")
-					h3.textLeft.questionHeading Q5:
+					h3.questionHeading(style="width:20%;") Q5:
 						h4.questionHeading When did you last read your security policy?
 						form(role='form',id='myForm',action="/security-test",method="post")
 							div.radioDiv#normalRadioGroup(style="margin-left:50px;")
@@ -23,6 +23,7 @@ block content
 							div.formButtons
 								button.btn.btn-success#btnSubmit1(type='submit') Submit
 								button.btn.btn-success#btnNext5(type='button',href="http://localhost:9000/results") Next
+								button.btn.btn-success.homeButton#btnHome(type='button') Home
 								style(type="text/css").
-									body {background-color:grey;}
+									body {background-color:#87CEFA;}
 								
