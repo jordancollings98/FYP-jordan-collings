@@ -1,0 +1,22 @@
+extends layout.pug
+block content
+	.container
+		div#index-center-div
+			div#mainDiv
+				div#titleBlogDiv
+					h1#blogTitle Why your business needs <br> a security policy (2020)
+					div#authorDiv
+						img(class='authorIcon', src="favicon.ico")
+						p.authorText Jordan Collings <br><i style="color:rgba(0,0,0, 0.54);">May 8, 2020 . 2 min read</i>
+						<hr>
+				div#mainContentDiv
+					img(class='newImg', src="security-policy-500px.jpg", style="width:100%;height:700px;")
+					p.mainBlogText(style="margin-bottom:50px;") A security policy is a vital asset in any business, without a security policy staff do not have a standard by which they must adhere, which then means that cyber security awareness is not at the forefront of the business and leaves the business with the potential for breaches due to the lack of staff knowledge.<br><br>A good security policy will cover all vital aspects of cyber security relevant to your business, as a baseline a security policy should atleast cover: Passwords, Own devices policy, Email/Phising, Use of unknown devices and Use of company devices.<br><br>There are many more aspects which could be added to a security policy, but the aforementioned policies are at the forefront of staff day to day security, mostly in regard to Email/Phising attacks which still make up to 80%<sup>[1]</sup> of cyber security breaches in the workplace.<br><br> This is generally because of weak security awareness and policy management leaving staff unaware of how to spot and avoid phising attacks, as well as having meetings where standard procedures and policies can be relayed to staff.<br><br> A concluding statement on this issue would be that if your business does not have a security policy which follows at bare minimum the aforementioned policies, a new security policy should be established or updated substantially and these policies must be relayed to staff to keep your business and in many cases, your customers safe.
+					p#finalText <a class="blackLink" href='/security-test'><i>To test if your security policy is up to standard, take the LockDown quiz and find out how secure your business is </i></a>
+					<hr>
+					div#referenceDiv
+						h3.refTitle References
+						p.reference <i><sup>[1] </sup>Department for Digital, Culture, Media & Sport, 2019. Cyber Security Breaches Survey 2019.</i>
+						button.btn.btn-success.btnResult#btnHome(type='button') Home
+		style(type="text/css").
+							   body {background-color:lightskyblue;}
