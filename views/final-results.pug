@@ -1,0 +1,32 @@
+extends layout.pug
+block content
+	.container
+		section.sectGet
+			h2#indexHeadingGrey(style="background-color:#87CEFA; padding:1rem;") End of quiz feedback
+			a(href='#')
+				button.btn.btn-primary#btnGetAnswer(type='button') Get Feedback
+		div#displayData 
+			div#firstSetFeedback
+				h3.feedbackTitle(style="padding-top:0px;") Category 1: Security Policy | Feedback
+				div#q1Feedback.feedbackTile
+				div#q2Feedback.feedbackTile
+				div#q3Feedback.feedbackTile
+				div#q4Feedback.feedbackTile
+				div#q5Feedback.feedbackTile
+			div#secondSetFeedback
+				h3.feedbackTitle(style="margin-bottom:35px;") Category 2: Passwords | Feedback
+				div#q6Feedback.feedbackTile
+				div#q7Feedback.feedbackTile
+				div#q8Feedback.feedbackTile
+				div#q9Feedback.feedbackTile
+				div#q10Feedback.feedbackTile
+			div#thirdSetFeedback
+				h3.feedbackTitle(style="margin-bottom:35px;") Category 3: Security Awareness | Feedback
+				div#q11Feedback.feedbackTile
+				div#q12Feedback.feedbackTile
+				div#q13Feedback.feedbackTile
+				div#q14Feedback.feedbackTile
+				div#q15Feedback.feedbackTile
+				button.btn.btn-success.btnResult#btnHome(type='button') Home
+				style(type="text/css").
+					body {background-image: url("./photo-of-earth.jpg"); }
