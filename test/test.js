@@ -15,8 +15,6 @@ var file = chaiFiles.file;
 var dir = chaiFiles.dir;
 var assert = chai.assert;
 
-
-
 chai.use(chaiHttp);
 
 function clickElement(element) {
@@ -28,7 +26,6 @@ function clickElement(element) {
     }
 }
 
-
 describe('GET all pages and expect status 200 | Integration Testing', function () {
 	it('Index page returns 200', function(){
 		chai.request("http://localhost:9000")
@@ -37,7 +34,7 @@ describe('GET all pages and expect status 200 | Integration Testing', function (
 				expect(res).to.have.status(200)
 	  });
 	});
-	/*it('Password blog page returns 200', function(){
+	it('Password blog page returns 200', function(){
 		chai.request("http://localhost:9000")
 		.get("/passwords")
 			.end (function (err,res){
@@ -58,13 +55,13 @@ describe('GET all pages and expect status 200 | Integration Testing', function (
 				expect(res).to.have.status(200)
 	  });
 	});
-	it('Security Policy blog page returns 500', function(){
+	it('Security Policy blog page returns 200', function(){
 		chai.request("http://localhost:9000")
 		.get("/security-policy")
 			.end (function (err,res){
-				expect(res).to.have.status(500)
+				expect(res).to.have.status(200)
 	  });
-	});*/
+	});
 	it('Results page 0-5 returns 200', function(){
 		chai.request("http://localhost:9000")
 		.get("/results")
@@ -75,6 +72,20 @@ describe('GET all pages and expect status 200 | Integration Testing', function (
 	it('Results page 5-10 returns 200', function(){
 		chai.request("http://localhost:9000")
 		.get("/results-2")
+			.end (function (err,res){
+				expect(res).to.have.status(200)
+	  });
+	});
+	it('Results page 10-15 returns 200', function(){
+		chai.request("http://localhost:9000")
+		.get("/results-3")
+			.end (function (err,res){
+				expect(res).to.have.status(200)
+	  });
+	});
+	it('Final results page returns 200', function(){
+		chai.request("http://localhost:9000")
+		.get("/final-results")
 			.end (function (err,res){
 				expect(res).to.have.status(200)
 	  });
@@ -151,39 +162,39 @@ describe('GET all pages and expect status 200 | Integration Testing', function (
 				expect(res).to.have.status(200)
 	  });
 	});	
-	it('Quiz page 11 returns 500', function(){
+	it('Quiz page 11 returns 200', function(){
 		chai.request("http://localhost:9000")
 		.get("/security-test-11")
 			.end (function (err,res){
-				expect(res).to.have.status(500)
+				expect(res).to.have.status(200)
 	  });
 	});	
-	it('Quiz page 12 returns 500', function(){
+	it('Quiz page 12 returns 200', function(){
 		chai.request("http://localhost:9000")
 		.get("/security-test-12")
 			.end (function (err,res){
-				expect(res).to.have.status(500)
+				expect(res).to.have.status(200)
 	  });
 	});
-	it('Quiz page 13 returns 500', function(){
+	it('Quiz page 13 returns 200', function(){
 		chai.request("http://localhost:9000")
 		.get("/security-test-13")
 			.end (function (err,res){
-				expect(res).to.have.status(500)
+				expect(res).to.have.status(200)
 	  });
 	});
-	it('Quiz page 14 returns 500', function(){
+	it('Quiz page 14 returns 200', function(){
 		chai.request("http://localhost:9000")
 		.get("/security-test-14")
 			.end (function (err,res){
-				expect(res).to.have.status(500)
+				expect(res).to.have.status(200)
 	  });
 	});
-	it('Quiz page 15 returns 500', function(){
+	it('Quiz page 15 returns 200', function(){
 		chai.request("http://localhost:9000")
 		.get("/security-test-15")
 			.end (function (err,res){
-				expect(res).to.have.status(500)
+				expect(res).to.have.status(200)
 	  });
 	});
 	it('Fake file returns 404, as it does not exist', function(){
@@ -204,7 +215,7 @@ describe('GET all pages and expect a specific file type | Integration Testing', 
 				expect(res).to.be.html;
 	  });
 	});
-	/*it('Password blog page returns HTML', function(){
+	it('Password blog page returns HTML', function(){
 		chai.request("http://localhost:9000")
 		.get("/passwords")
 			.end (function (err,res){
@@ -231,7 +242,7 @@ describe('GET all pages and expect a specific file type | Integration Testing', 
 			.end (function (err,res){
 				expect(res).to.be.html;
 	  });
-	});*/
+	});
 	it('Results page 0-5 returns HTML', function(){
 		chai.request("http://localhost:9000")
 		.get("/results")
