@@ -420,7 +420,7 @@ $(document).ready(function(){
 		
 		 /*                Answer for Question 13        */
          /*                       START                 */
-   if (answer.id == 13 && answer.selection == "More than five")
+   if (answer.id == 13 && answer.selection == "More than Five")
 		{
 			var questionThirteen = '<li id="titleList" class="titleListGreen">' + "ID:"+ "\xa0" + answer.id + "\xa0" + "This shows a business dedication to keeping employees aware of cyber security, showing comittment to the safety and security of business and of clients information."+'</li>';
 			$('#q13Feedback').append(questionThirteen);
