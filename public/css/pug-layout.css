@@ -127,8 +127,3 @@ DARKER RED FOR FEEDBACK - background-color:#ff3333
 	}
  }
  
-  @media only screen and (min-width: 768px){
-	.indexInfo{
-	  max-width:720px;
-	}
- }
